@@ -24,7 +24,7 @@ namespace NetJsonSample
             //Demo1();
             
             //Source: https://www.ncdc.noaa.gov/cag/global/time-series/southAmerica/land/1/6/1900-2020
-            string json = File.ReadAllText(@"C:\source-of-knowledge\JSON\code\json\temperatures-years.json");
+            string json = File.ReadAllText(@"..\..\..\json\temperatures-years.json");
 
             using (JsonDocument document = JsonDocument.Parse(json))
             {
@@ -51,7 +51,7 @@ namespace NetJsonSample
 
         private static void Demo1()
         {
-            string json = File.ReadAllText(@"C:\source-of-knowledge\JSON\code\json\personalInfo.json");
+            string json = File.ReadAllText(@"..\..\..\json\personalInfo.json");
 
             var options = new JsonSerializerOptions()
             {
